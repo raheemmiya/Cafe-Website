@@ -1,0 +1,24 @@
+.demo{ 
+
+}
+
+
+.demo a{ 
+height:auto ;
+width: auto;
+display: inline-block;
+
+}
+
+.demo a img{ 
+
+height: 100%;
+width: 100%;
+
+}
+
+body{ 
+    width: auto;
+    background-color: blue;
+
+}

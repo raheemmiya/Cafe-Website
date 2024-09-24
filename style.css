@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+}
+
+/* Customer support container  */
+.customer-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.8em;
+}
+
+.customer-support-logo {
+  height: 20px;
+}
+
+.customer-support img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer-support h1 {
+  font-size: 15px;
+}
+
+/* First Header container */
+
+.first-header {
+  display: flex;
+  background-color: #fdf0d5;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-logo {
+  display: inline-block;
+  width: 90px;
+  height: 60px;
+}
+
+.main-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.side-logo {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.side-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Second header  */
+.second-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(230, 181, 118);
+  height: 3em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+  flex-direction: row;
+}
+
+.navbar a {
+  color: #6f4e37;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.search-bar {
+  display: flex;
+  overflow: hidden;
+  text-align: left;
+  justify-content: center;
+  line-height: 10px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.search-bar::placeholder {
+  color: grey;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Gallery  */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin: 0px;
+  padding-left: 50px;
+  height: 90vh;
+  background-image: url("banner.jpg");
+  background-position: right;
+}
+
+.main {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  row-gap: 1.5em;
+}
+
+.main h4 {
+  color: #6f4e37;
+}
+
+.main h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+}
+
+.main button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid burlywood;
+  background-color: burlywood;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Services */
+
+.services {
+  background-color: #fdf0d5;
+  height: 160px;
+  display: flex;
+  column-gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.free-shipping,
+.cash-on-delivery,
+.special-gift-card,
+.customer-service {
+  height: 90px;
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  column-gap: 1.5em;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "a title"
+    "a sub";
+
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.free-shipping,
+.cash-on-delivery,
+.special-gift-card,
+.customer-service a {
+  padding: 15px 15px 5px 10px;
+  grid-area: a;
+}
+
+.free-shipping h3,
+.cash-on-delivery h3,
+.special-gift-card h3,
+.customer-service h3 {
+  padding-top: 8px;
+  align-items: center;
+  justify-content: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  grid-area: title;
+}
+
+.free-shipping h4,
+.cash-on-delivery h4,
+.special-gift-card h4,
+.customer-service h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  grid-area: sub;
+}
+
+/*  Top= categories  */
+
+.heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #fdf0d5;
+}
+
+.top-categories {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf0d5;
+  display: flex;
+  column-gap: 1em;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.coffee-mocha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(coffee-mocha.png);
+  height: 250px;
+  width: 400px;
+  border-radius: 30px;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.7) url("coffee-mocha.png");
+  background-blend-mode: darken;
+}
+
+.coffee-mocha h1,
+.espresso-americano h1,
+.cappuccino h1 {
+  color: white;
+}
+
+.coffee-mocha a,
+.espresso-americano a,
+.cappuccino a {
+  color: wheat;
+}
+
+.espresso-americano {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(espresso-americano.jpg); */
+  background: rgba(0, 0, 0, 0.7) url("espresso-americano.jpg");
+  object-fit: cover;
+  height: 250px;
+  width: 400px;
+  border-radius: 30px;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.cappuccino {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7) url("cappuccino.jpeg");
+  object-fit: cover;
+  height: 250px;
+  width: 400px;
+  border-radius: 30px;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+/* Gallery 2 */
+
+.gallery2 {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "a b c"
+    "d b e";
+}
+
+.gallery2 a {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
+
+.gallery2 a img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery2 .A {
+  grid-area: a;
+}
+
+.gallery2 .b {
+  grid-area: b;
+}
+
+.gallery2 .c {
+  grid-area: c;
+}
+
+.gallery2 .d {
+  grid-area: d;
+}
+
+.gallery2 .e {
+  grid-area: e;
+}
+
+/* Special Products */
+
+.special-products-heading {
+  padding-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #fdf0d5;
+}
+
+.special-products {
+  display: flex;
+  column-gap: 5%;
+  padding: 3%;
+  background-color: #fdf0d5;
+  max-height: 500px;
+}
+
+.brandy-coffee,
+.coffee-coretto,
+.english-coffee,
+.irish-coffee {
+  border: none;
+  border-radius: 1px;
+  padding: 1% 1% 0% 1%;
+  margin: 0;
+  background-color: white;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 50% 12% 12% 12%;
+  grid-template-areas:
+    "hot"
+    "main-img"
+    "rating"
+    "name"
+    "price";
+}
+
+.hot-image {
+  grid-area: hot;
+}
+
+.hot-image img {
+  height: 30px;
+  width: 30px;
+}
+.coffee-img {
+  justify-self: center;
+  grid-area: main-img;
+  width: 70%;
+}
+
+.coffee-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.rating-img {
+  grid-area: rating;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  justify-items: center;
+}
+
+.rating-img img {
+  width: 100%;
+  height: 50%;
+}
+
+.special-products h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: name;
+  text-align: center;
+}
+
+.special-products h4 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-area: price;
+}
+
+/* Latest blogs section  */
+
+.latest-blog-heading {
+  padding-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf0d5;
+  text-align: center;
+}
+
+.latest-blogs {
+  display: flex;
+  background-color: #fdf0d5;
+  column-gap: 1em;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.best-coffee,
+.top-50-coffee,
+.the-100yearold-coffee {
+  flex:initial;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  justify-content: space-around;
+}
+
+.best-coffee a,
+.top-50-coffee a,
+.the-100yearold-coffee a {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.best-coffee a img,
+.top-50-coffee a img,
+.the-100yearold-coffee a img {
+  width: 100%;
+  height:100%;
+  border-radius: 20px;
+}
+
+
+
+.best-coffee h2,
+.top-50-coffee h2,
+.the-100yearold-coffee h2{
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: burlywood;
+  font-weight: 600;
+  font-size: 12px;
+} 
+
+
+.best-coffee h1,
+.top-50-coffee h1,
+.the-100yearold-coffee h1{ 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+
+} 
+
+
+
+.best-coffee,
+.top-50-coffee,
+.the-100yearold-coffee {
+
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+
+.learn-more-btn{ 
+  background-color: burlywood;
+  border: 0px;
+  width: fit-content;
+  padding: 10px 12px 10px 12px;
+  border-radius: 20px;
+  color: white;
+}
