@@ -535,6 +535,9 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: burlywood;
   padding: 10px 10% 10px 10%;
+  justify-content: center;
+  column-gap: 5%;
+
 }
 
 .first-footer h2 {
@@ -544,8 +547,10 @@ header {
 .first-footer h3,
 .first-footer h4,
 .first-footer a {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 200;
   color: white;
+  text-decoration: none;
 }
 
 .contact-info,
@@ -562,5 +567,7 @@ header {
   color: white;
   background-color: black;
   text-align: center;
-  
+  width: fit-content;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
 }
